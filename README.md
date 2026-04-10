@@ -4,9 +4,9 @@ Custom Claude Code slash commands for political science research workflows.
 
 ## Installation
 
-**User-level** (available in all projects):
+**User-level** (available in all your projects):
 ```bash
-cp .claude/commands/replication-package.md ~/.claude/commands/
+cp .claude/commands/[SKILL].md ~/.claude/commands/
 ```
 
 **Project-level** (available only when Claude Code is opened in a cloned copy of this repo):
@@ -18,7 +18,7 @@ Just clone the repo — the `.claude/commands/` directory is picked up automatic
 
 ### `/replication-package [project-directory]`
 
-Guides you through building a submission-ready replication archive following political science journal conventions (APSR/AJPS/IO/Cambridge Elements style).
+Guides you through building a submission-ready replication archive following political science journal conventions.
 
 **What it does:**
 - Checks for existing session context before re-auditing anything
@@ -37,4 +37,4 @@ Guides you through building a submission-ready replication archive following pol
 
 Passing a path skips the "where is your project?" question.
 
-**Designed for:** R-based projects, but covers Python and Stata too. Handles proprietary/licensed data (Gallup, Pew, etc.) with data minimization and pseudocode documentation patterns.
+**Designed for:** R-based projects, but covers Python and Stata too. Handles proprietary/licensed data with data minimization and pseudocode documentation patterns.
